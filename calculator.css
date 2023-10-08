@@ -1,0 +1,271 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+html {
+    scroll-behavior: smooth;
+  }
+
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.selected{color: red}
+
+.bubble_1,.bubble_2,.bubble_3{
+    position: absolute;
+    animation: bubble 2.5s infinite alternate;
+}
+
+@keyframes bubble{
+    from{transform: translateY(0px);}
+    to{transform: translateY(30px);}
+}
+
+.Banner{
+    background:url('Banner.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Banner-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Banner-text h1{
+    color: #FFFFFF;
+    font-family: Inter;
+    font-size: 70px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    padding-top: 100px;
+}
+.Banner-text h2{
+    color: #FFFFFF;
+    font-family: Inter;
+    font-size: 22px;
+    line-height: 5%;
+    letter-spacing: 0.12em;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.start a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.cacuLate:hover a{
+    color: #0E3B47;
+}
+
+.cacuLate{
+    background-color: transparent;
+    padding: 16px 48px;
+    margin: 20px 0 30px 0;
+    border-radius: 200px;
+    border: 1px solid #fff;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+}
+
+.cacuLate:hover{
+    background-color: #FFEE57;
+    transition: .3s;
+}
+
+.start{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.data{
+    margin-top: 100px;
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0.04em;
+    color: #053A5F;
+}
+.pd{
+    padding: 0 20px;
+    margin-left: 125px;
+    border-left: 9px solid #053A5F;
+}
+.border-cir{
+    border-radius: 15px;
+}
+.table{
+    margin-left: 120px ;
+    border: 50px;
+    width: 1280px;
+    padding-right: 120px;
+    border-collapse: collapse;
+    border-radius: 8px;
+    text-align: center;
+}
+.table-title{
+    background-color: #01548D;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #FFFFFF;
+}
+.table-content{
+    background-color: #FFFFFF;
+    color: #01548D;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.04em;
+    text-align: center;
+}
+.container{
+    background-color: white;
+    color: #053A5F;
+    margin-top: 20px;
+    margin-left: 120px ;
+    margin-right: 120px;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.04em;
+    border-radius: 15px;
+}
+.box{
+    display: flex;
+    padding-top: 50px;
+    justify-content: center;
+    color: #01548D;
+    text-align: center;
+}
+.button-time{
+    font-size: 14px;
+    padding: 10px 20px;
+    width: 160px;
+    border-radius: 200px;
+}
+.pl-85{
+    padding-left: 85px;
+}
+
+.pt-5{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.mb-8{
+    margin-bottom: 8px;
+}
+.mb-30{
+    margin-bottom: 30px;
+}
+.mb-50{
+    margin-bottom: 50px;
+}
+.pb-126{
+    padding-bottom: 80px;
+}
+.m-center{
+    display: flex;
+    justify-content: center;
+    padding: 60px 0 40px 0;
+}
+.button-send{
+    background: #01548D;
+    color:#FFFFFF;
+    padding: 8px 40px;
+    border-radius: 4px;
+    border: none;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+}
+.flex-profit{
+    display: flex;
+    justify-content: center;
+}
+
+.box-data{
+    color: #01548D;
+    width: 200px;
+    margin: 15px;
+    text-align: center;
+}
+.box-content{
+    margin: 3px;
+}
+.text-left{
+    text-align: left;
+    margin: 3px;
+}
+.text-right{
+    text-align: right;
+    margin: 3px;
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+}
+.box-column{
+    flex-direction: column;
+    padding: 50px;
+}
+.white{
+    padding: 50px 300px;
+}
