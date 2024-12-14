@@ -1,0 +1,228 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ccc;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+}
+
+#totalBalance {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+button {
+  margin: 10px 0;
+  padding: 10px 15px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #f0f0f0;
+}
+
+.bubble_1,
+.bubble_2,
+.bubble_3 {
+  position: absolute;
+  animation: bubble 2.5s infinite alternate;
+}
+
+@keyframes bubble {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(30px);
+  }
+}
+
+.banner {
+  background: url("Banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.banner-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.banner-text h1 {
+  color: #ffffff;
+  font-family: Inter;
+  font-size: 70px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  padding-top: 100px;
+}
+.banner-text h2 {
+  color: #ffffff;
+  font-family: Inter;
+  font-size: 22px;
+  line-height: 5%;
+  letter-spacing: 0.12em;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.start a {
+  text-decoration: none;
+  color: #fff;
+}
+.start button {
+  background-color: transparent;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.12em;
+  padding: 16px 48px;
+  margin: 20px 0px 30px;
+  border-radius: 200px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(255, 255, 255);
+  transition: 0.3s;
+}
+.start button:hover {
+  background-color: rgb(255, 238, 87);
+  transition: 0.3s;
+}
+.start button:hover > a {
+  transition: 0.3s;
+  color: #0e3b47;
+}
+
+/**/
+
+.count-container {
+  width: 85%;
+  margin: 100px auto 150px;
+}
+#transactionForm {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+#transactionTable tr:nth-child(1) {
+  background-color: #0e3f64;
+  color: #fff;
+}
+tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+tr:nth-child(even) {
+  background-color: #fff;
+}
+
+input,
+select,
+option {
+  font-size: 16px;
+}
